@@ -1,0 +1,3 @@
+import React from 'react';import {createRoot} from 'react-dom/client';import {HashRouter} from 'react-router-dom';
+import App from './App.jsx';import {DataProvider} from './store.jsx';import ErrorBoundary from './components/ErrorBoundary.jsx';import './styles.css';
+createRoot(document.getElementById('root')).render(<HashRouter><DataProvider><ErrorBoundary label="the app"><App/></ErrorBoundary></DataProvider></HashRouter>);
